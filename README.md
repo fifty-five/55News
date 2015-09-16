@@ -40,3 +40,11 @@ We had a lot of pain to reproduce this bug. During our inquiry we found that :
 - This bug first occured with Google Play Services 7.3.0 
 - This bug occurs when the same rule fires a google analytics tag and a function call tag using our macro userGoogleId
 
+###Description of the container 
+The container used contains the following objects 
+
+|Tag type	| Tag name	| Rule 	| Parameter 	|
+|---		|------		|------		|---		|
+|Universal Analytics| A - Track splashScreen| event = applicationStart | screenName|
+|Function Call| B - Send Client Id to Tune Servers| event = applicationStart | userGoogleId |
+
